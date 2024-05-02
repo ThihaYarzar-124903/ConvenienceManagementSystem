@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Thiha-Home\JWD47_SJWS\JWD47-ProjectWorkspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+211979433.index
+711710086.index
+486297443.index
+1769832124.index
+3675041809.index
+901699319.index

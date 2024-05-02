@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:mvc="http://www.springframework.org/schema/mvc"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd 
+    http://www.springframework.org/schema/mvc 
+    http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<context:component-scan base-package="conveniencemanagementsystem.controllers" />
+	
+	<mvc:annotation-driven conversion-service="conversionService" />
+	
+	<bean id="categoryDAO" class="conveniencemanagementsystem.persistant.dao.CategoryDAO"></bean>
+	<bean id="categoryMapper" class="conveniencemanagementsystem.persistant.dao.CategoryMapper"></bean>
+	<bean id="productDAO" class="conveniencemanagementsystem.persistant.dao.ProductDAO"></bean>
+	<bean id="mapper" class="conveniencemanagementsystem.persistant.dao.ProductMapper"></bean>
+	<bean id="dsicountDAO" class="conveniencemanagementsystem.persistant.dao.DiscountDAO"></bean>
+	<bean id="discountMapper" class="conveniencemanagementsystem.persistant.dao.DiscountMapper"></bean>
+	<bean id="userDAO" class="conveniencemanagementsystem.persistant.dao.UserDAO"></bean>
+	<bean id="userMapper" class="conveniencemanagementsystem.persistant.dao.UserMapper"></bean>
+	<bean id="productdetailsDAO" class="conveniencemanagementsystem.persistant.dao.ProductDetailsDAO"></bean>
+	<bean id="salesDAO" class="conveniencemanagementsystem.persistant.dao.SalesDAO"></bean>
+	<bean id="salesDetailsDAO" class="conveniencemanagementsystem.persistant.dao.SalesDetailsDAO"></bean>
+	<bean id="reportDAO" class="conveniencemanagementsystem.persistant.dao.ReportDAO"></bean>
+	
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+	<mvc:resources mapping="/resources/**" location="/resources/bootstrap/" />
+	 
+	 <bean class="org.springframework.context.support.ResourceBundleMessageSource" id="messageSource"> 
+			<property name="basename" value="messages" /> 
+	</bean>
+	
+	<bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+		<property name="formatters">
+			<set>
+				<bean class="conveniencemanagementsystem.formatters.ProductFormatter"></bean>
+			</set>
+		</property>
+	</bean>
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+</beans>

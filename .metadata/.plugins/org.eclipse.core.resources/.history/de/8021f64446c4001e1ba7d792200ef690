@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+    <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Reports Details</title>
+</head>
+<body>
+	<form:form action="/ConvenienceManagementSystem/details" method="POST" modelAttribute="sales">
+		<form:label path="purchaseDate" class="form-label">Purchase Date</form:label>
+		<form:input path="purchaseDate" class="form-control"/>
+	</form:form>
+</body>
+</html>

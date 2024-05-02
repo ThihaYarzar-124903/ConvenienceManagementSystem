@@ -1,0 +1,87 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Custom CSS for styling -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+           
+        }
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+
+        .login-container {
+            position: relative; /* Ensure the container is positioned relative to the video */
+            z-index: 1; /* Place the container above the video */
+            max-width: 400px;
+            margin: auto;
+            margin-top: 100px;
+            background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(62, 213, 11, 0.981);
+        }
+
+        .login-container h2 {
+            text-align: center;
+            color: #130437;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+	<video autoplay loop muted>
+    	<source src="https://player.vimeo.com/external/504678183.sd.mp4?s=9c009bc80f1c5ce4c93cd8be4029177f8dc5a7a9&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+	</video>
+
+	<div class="container login-container">
+    	<h2>Convenience Management System</h2>
+
+    <!-- Login Form -->
+    	<form:form class=""  action="login" method="post"  modelAttribute="user">
+        	<div class="form-group">
+            	<label for="emailInput">Email</label>
+            	<form:input type="email" class="form-control" id="emailInput" path="email" required="required" placeholder="Please enter your email" />
+        	</div>
+
+        	<div class="form-group">
+            	<label for="passwordInput">Password</label ><span style="color:red">${error}</span>
+            	<form:input type="password" class="form-control" id="passwordInput" path="password" required="required" placeholder="Please enter your password" />
+        	</div>
+        	<div class="d-flex justify-content-end">
+        		<button type="submit" class="btn btn-primary">Login</button>
+        	</div>
+    	</form:form>
+	</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

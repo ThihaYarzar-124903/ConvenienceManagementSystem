@@ -1,0 +1,112 @@
+@charset "ISO-8859-1";
+
+body { 
+      color: black;	
+      background-color: #FFD1B7;
+     } 
+     i {
+     font-size: 20px;
+     color: black;
+     }
+     
+     
+     * { 
+    
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    
+    }
+    
+    .sidebar {
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    width: 100%;
+    
+}
+
+/* Style for the sidebar links */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.first ul li {
+	border-radius: 5px;
+    padding: 9px 0px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    margin: 0 auto;
+    width: 90%
+}
+
+.first ul {
+     margin-top: 10px;
+     display:flex;
+     flex-direction:column;
+}
+
+.first ul {
+     margin-top: 10px;
+}
+
+.first ul li a{
+	text-decoration: none;
+}
+
+.first ul li:hover {
+	 background-color: #8080ff;
+}
+
+/* Change the background color of the active/current link */
+.sidebar ul li a.active {
+    
+}
+
+/* Style for the main content */
+
+
+nav {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 3px;
+    width: 100%;
+    background-color: #8080ff;
+    position: sticky;
+    top: 0;
+    z-index: 700;
+}
+
+.dadhoboard {
+	margin: 0 auto;
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+    width: 94%;
+    justify-content: space-between;
+}
+
+.dadhoboard a {
+	   text-decoration: none;
+	   cursor:pointer;
+	
+}
+
+.first {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: fixed;
+    width: 15%;
+    height: 100vh;
+    display: inline;
+    background-color: #FFFFFF;
+}
+
+.second {
+	margin-left: 15%;
+	width:85%;
+    display: inline;
+    
+}

@@ -1,0 +1,16 @@
+127.0.0.1 - - [23/Apr/2024:20:13:14 +0630] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:20:13:17 +0630] "GET /ConvenienceManagementSystem/ HTTP/1.1" 200 4376
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:20:13:17 +0630] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:20:13:23 +0630] "POST /ConvenienceManagementSystem/login HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:20:13:23 +0630] "GET /ConvenienceManagementSystem/owner HTTP/1.1" 200 4738
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:20:13:23 +0630] "GET /ConvenienceManagementSystem/resources/css/style.css HTTP/1.1" 200 1749
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:20:13:23 +0630] "GET /ConvenienceManagementSystem/resources/css/bootstrap.min.css HTTP/1.1" 200 279511
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:20:13:23 +0630] "GET /ConvenienceManagementSystem/resources/js/bootstrap.min.js HTTP/1.1" 200 60583
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:20:13:40 +0630] "GET /ConvenienceManagementSystem/products/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:20:13:40 +0630] "GET /ConvenienceManagementSystem/ HTTP/1.1" 200 4376
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:20:13:52 +0630] "POST /ConvenienceManagementSystem/login HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:20:13:52 +0630] "GET /ConvenienceManagementSystem/owner HTTP/1.1" 200 4738
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:20:13:56 +0630] "GET /ConvenienceManagementSystem/products/ HTTP/1.1" 200 2594500
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:20:14:00 +0630] "GET /ConvenienceManagementSystem/products/edit/1 HTTP/1.1" 200 85457
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:20:14:00 +0630] "GET /ConvenienceManagementSystem/resources/css/sucessful.css HTTP/1.1" 200 912
+0:0:0:0:0:0:0:1 - - [23/Apr/2024:20:14:13 +0630] "GET /ConvenienceManagementSystem/products/edit/2 HTTP/1.1" 200 85454
